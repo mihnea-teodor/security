@@ -1,0 +1,53 @@
+/* --- */
+*{
+	margin-top:0;
+	padding:0;
+}
+body{
+	background-image:url(../images/background_01.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	text-align:center;
+}
+#menu{
+	position:absolute;
+	display:block;
+	top:50px;
+	height:auto;
+	width:99%;
+}
+#menu li{
+	display:inline;
+	padding-right:100px;
+	list-style:none;
+}
+#menu li a{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:bold;
+	color:#FFF;
+}
+#menu li a:hover{
+	text-decoration:none;
+	color:#F00;
+}
+#motto{
+	//background-color:#CCC;
+	position:absolute;
+	display:block;
+	height:auto;
+	left:0;
+	width:100%;
+	text-align:center;
+	top:666px;
+}
+#motto p{
+	color:#FFF;
+	font-size:24px;
+	font-weight:bold;
+}
+#small{
+	font-size:14px;
+}

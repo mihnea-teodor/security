@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SERVICES</title>
+  <link rel="icon" type="image/ico"  href="images/logo.png">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="js/services.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+
+<div id="menu">
+    <ul>
+       	<li><a href="index.html">HOME</a></li>
+        <li><a href="about_us.html">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+<!-- ceva -->
+ <script>
+  $(function() {
+    $( "#dialog_1" ).dialog();
+  });
+  </script>
+<div id="dialog_1" title="Encrypt">
+	<div id="editing">
+    	<ul>
+        	<li><a href="#" title="UPLOAD" onClick="upload();"><img src="images/editing_upload.png"></a></li>
+            <li><a href="#" title="DOWNLOAD"><img src="images/editing_download.png"></a></li>
+            <li><a href="#" title="ENCRYPT/DECRYPT" onClick="crypt();"><img src="images/editing_crypt.png"></a></li>
+            <li><select onchange="writeAlgoritm();" id="algoritms">
+            	<option>chose algoritm</option>
+                <option value="3DES">3DES</option>
+                <option value="RIJNDAEL_256">RIJNDAEL_256</option>
+                <option value="RSA">RSA</option>
+                <option value="algoritm 4">algoritm 3</option>
+                </select>
+            </li>
+            <li><input type="text" name="key" id="writeKey" style="display:none" value="key" onClick="writeKey();"></li>
+        </ul>
+    </div>
+    <form action="test.php" method="post" enctype="multipart/form-data" target="content">
+    	<input type="file" name="files" id="files" style="display:none" onChange="send();">
+    	<input type="text" name="algoritm" id="algoritm" style="display:none">
+        <input type="text" name="key" id="key" style="display:none">
+        <input type="text" name="crypt" id="crypt" style="display:none">   	
+        <input type="submit" name="submit" id="submit" style="display:none">
+	</form>
+    <!--<form action="download.php" method="get" hidden="true">
+    <input type="submit" id="download" style="visibility:hidden;"/>
+</form>-->
+    
+<iframe name="content" src="test.php">
+
+<!-- ceva -->
+</div>
+    <!-- ceva 
+    
+</div>
+ <script>
+  $(function() {
+    $( "#dialog_2" ).dialog();
+  });
+  </script>
+<div id="dialog_2" title="Upload Files">
+<script>
+	$(function () {
+    $(":file").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded;
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+});
+
+function imageIsLoaded(e) {
+    $('#myImg').attr('src', e.target.result);
+};
+</script>    
+    <input type='file' />
+	<img id="myImg" src="#" />
+</div>
+
+<script>
+  $(function() {
+    $( "#dialog_3" ).dialog();
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="dialog_3" title="Edit Text">
+	<p>Edit Text</p>
+    <input type="text" title="text">
+</div> -->
+
+</body>
+</html>

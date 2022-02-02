@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<!-- redirect <meta http-equiv="refresh" content="7";url=http://ourproject.esy.es/loading.html"> -->
+<link href="css/video.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/ico"  href="images/logo.png">
+<title>REGISTER</title>
+</head>
+<body>
+
+<video autoplay loop id="background">
+<source src="video/lock.webm" type="video/webm">
+<source src="video/lock.mp4" type="video/mp4">
+</video>
+
+<div id="register">
+<form method="post" action="register.php">
+<input type="text" name="nume" placeholder="Nume" id="text"><br>
+<input type="text" name="prenume" placeholder="Prenume" id="text"><br>
+<input type="email" name="email" placeholder="E-mail" id="text"><br><br>
+
+<input type="text" name="utilizator" placeholder="username" id="text"><br>
+<input type="password" name="parola" placeholder="password" id="text"><br><br>
+<input type="submit" value="Register" id="button">
+<input type="submit" value="<<< Login" formaction="login.html" id="button">
+
+</form>
+</div>
+

@@ -1,0 +1,13 @@
+/* --- */
+*{
+	margin:0;
+	padding:0;
+}
+/* black background */
+body{
+	background-color:#000;
+}
+/* raining screen */
+canvas{
+	display:block;
+}

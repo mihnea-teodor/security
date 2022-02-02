@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<!-- redirect <meta http-equiv="refresh" content="7";url=http://ourproject.esy.es/loading.html"> -->
+<link href="css/video.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/ico"  href="images/logo.png">
+<title>SECURITY</title>
+</head>
+<body>
+
+<video autoplay loop id="background">
+<source src="video/lock.webm" type="video/webm">
+<source src="video/lock.mp4" type="video/mp4">
+</video>
+
+<div id="login">
+<form method="post" action="./php/login.php">
+<input type="text" name="utilizator" placeholder="username" id="user"><br>
+<input type="password" name="parola" placeholder="password" id="pass"><br><br>
+<input type="submit" value="Login" id="button">
+<input type="submit" value="Register >>>" formaction="register.html" id="button">
+</form>
+</div>
+
+</body>
+</html>
